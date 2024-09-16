@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptocurrency Data</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav>
+        <img src="./assets/logo.png" width="240px" alt="Logo" />
+        <div>
+          <select>
+            <option value="inr">INR</option>
+            <option value="usd">USD</option>
+          </select>
+          <select>
+            <option value="btc">BTC</option>
+            <option value="eth">ETH</option>
+          </select>
+          <select>
+            <option value="buy-btc">BUY BTC</option>
+            <option value="sell-btc">SELL BTC</option>
+          </select>
+        </div>
+        <div>
+          <button>Connect Telegram</button>
+        </div>
+      </nav>
+
+      <section id="crypto-details"></section>
+      <div id="loader" class="loader"></div>
+      <div id="msg"></div>
+      <section id="crypto-data"></section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

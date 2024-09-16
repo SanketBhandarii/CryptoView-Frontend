@@ -1,0 +1,286 @@
+body {
+  background-color: #191d28;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  width: 95%;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+select {
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  background-color: #2a2e38;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+section {
+  margin: 20px 0;
+}
+
+#crypto-data {
+  background-color: #2a2e38;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2e38;
+  color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  text-align: left;
+}
+
+table th {
+  background-color: #1a1d24;
+}
+table tr:nth-child(1) {
+  background-color: #375e64;
+}
+table tr:hover {
+  background-color: #00bcd4;
+  cursor: pointer;
+  transition: 0.1s linear all;
+  border-radius: 20px;
+}
+
+#crypto-details {
+  background-color: #2a3338;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#crypto-details h2 {
+  margin: 0;
+}
+
+#crypto-details p {
+  margin: 5px 0;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #00bcd4;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#msg {
+  text-align: center;
+  font-size: 24px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #adb8ba;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00a2c7;
+}
+
+@media (max-width: 480px) {
+  #wrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 0;
+  }
+
+  nav img {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  select,
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  #crypto-details {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  table {
+    font-size: 10px;
+  }
+
+  #msg {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  #wrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  nav img {
+    height: 45px;
+    margin-bottom: 10px;
+  }
+
+  select,
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  #crypto-details {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  table {
+    font-size: 15px;
+  }
+
+  #msg {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #wrapper {
+    width: 95%;
+    padding: 0 15px;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  select,
+  button {
+    margin: 0 5px;
+  }
+
+  #crypto-details {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  table {
+    font-size: 16px;
+  }
+
+  #msg {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #wrapper {
+    width: 95%;
+    padding: 0;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  select,
+  button {
+    margin: 0 10px;
+  }
+
+  #crypto-details {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  table {
+    font-size: 18px;
+  }
+
+  #msg {
+    font-size: 24px;
+  }
+}
