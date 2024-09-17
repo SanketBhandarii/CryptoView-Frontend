@@ -14,7 +14,7 @@ CryptoView is a real-time cryptocurrency price tracker that provides live update
 
 ### Frontend:
 - **React.js**: Used for building the interactive user interface and handling dynamic content.
-- **Tailwind CSS**: For modern, responsive design and styling, ensuring a smooth user experience.
+- **Vanilla CSS**: For modern, responsive design and styling, ensuring a smooth user experience.
 
 ### Backend:
 - **Node.js**: The runtime environment for building and running the server-side code.
